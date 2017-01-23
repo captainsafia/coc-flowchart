@@ -1,0 +1,52 @@
+graph TD;
+	step1[Are you looking to add a Code of Conduct to your community?]
+	step2[Yes]
+	step3[No]
+	step4[Um. That's not a good idea!]
+	step5[Great! Is this an online or real world community?]
+	step6[Online!]
+	step7[Real world!]
+	step8[Is this a conference or a Meetup?]
+	step9[Conference!]
+	step10[Meetup!]
+	step11[Will this conference be held in multiple locations?]
+	step12[Yes!]
+	step13[No!]
+	step14[Will the same committee be organizing this conference for all locations?]
+	step15[Yes!]
+	step16[No!]
+	step17[Is the event hosted at a university, corporation, or other private venue?]
+	step18[Yes!]
+	step19[No!]
+	step20[Is this community an open source project or a discussion platform?]
+	step21[Open source project!]
+	step22[Discussion platform?]
+	step23[How big is your community?]
+	step24[Over 50 people.]
+	step25[50 people or under.]
+	
+	step1-->step2
+	step1-->step3
+	step3-->step4
+	step4-->step1
+	step2-->step5
+	step5-->step6
+	step5-->step7
+	step7-->step8
+	step8-->step9
+	step9-->step11
+	step9-->step17
+	step17-->step18
+	step17-->step19
+	step11-->step12
+	step11-->step13
+	step12-->step14
+	step14-->step15
+	step14-->step16
+	step8-->step10
+	step6-->step20
+	step20-->step21
+	step20-->step22
+	step6-->step23
+	step23-->step24
+	step23-->step25
